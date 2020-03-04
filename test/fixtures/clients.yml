@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  first_name: MyString
+  last_name: MyString
+  type: 1
+  ddoc_type: 1
+  doc: MyString
+  docEm: 2020-03-04
+  docExp: 2020-03-04
+  phone: MyString
+  sec_phone: MyString
+
+two:
+  first_name: MyString
+  last_name: MyString
+  type: 1
+  ddoc_type: 1
+  doc: MyString
+  docEm: 2020-03-04
+  docExp: 2020-03-04
+  phone: MyString
+  sec_phone: MyString

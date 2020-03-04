@@ -1,0 +1,50 @@
+<h1>Nuevo Usuario</h1>
+<%= form_for :post do |f| %>
+  <p>
+    <%= f.label :first_name %><br>
+    <%= f.text_field :first_name %>
+  </p>
+  <p>
+    <%= f.label :last_name %><br>
+    <%= f.text_field :last_name %>
+  </p>
+
+  <p>
+    <%= f.label :type %><br>
+    <%= f.collection_select :type, ['J', 'N'], :id, :name_with_initial, prompt: true %>
+  </p>
+
+  <p>
+    <%= f.label :typeDoc %><br>
+    <%= f.collection_select :type, ['Ced', 'RIF', 'Pas'], :id, :name_with_initial, prompt: true %>
+  </p>
+
+  <p>
+    <%= f.label :doc %><br>
+    <%= f.text_field :doc %>
+  </p>
+
+  <p>
+    <%= f.label :docEm %><br>
+    <%= f.date_select :docEm %>
+  </p>
+
+  <p>
+    <%= f.label :docExp %><br>
+    <%= f.date_select :docExp %>
+  </p>
+
+  <p>
+    <%= f.label :first_name %><br>
+    <%= f.text_field :first_name %>
+  </p>
+
+  <p>
+    <%= f.label :text %><br>
+    <%= f.text_area :text %>
+  </p>
+ 
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
